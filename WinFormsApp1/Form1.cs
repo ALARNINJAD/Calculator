@@ -47,88 +47,91 @@ namespace WinFormsApp1
         {
 
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)// .
         {
-            input += ".";
-            textBox1.Text = input;
+            if ( !input.Contains('.'))
+            {
+                input += ".";
+                textBox1.Text = input;
+            }
         }
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Button b = (Button)sender;
-            input += b.Text;
-            textBox1.Text = input;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)// 1
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)// 2
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)// 3
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)// 4
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button10_Click(object sender, EventArgs e)// 5
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)// 6
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void button13_Click(object sender, EventArgs e)// 7
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void button14_Click(object sender, EventArgs e)// 8
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button15_Click(object sender, EventArgs e)// 9
         {
             Button b = (Button)sender;
             input += b.Text;
             textBox1.Text = input;
         }
 
-        private void button17_Click(object sender, EventArgs e)//clear
+        private void button2_Click(object sender, EventArgs e)// 0
+        {
+            Button b = (Button)sender;
+            input += b.Text;
+            textBox1.Text = input;
+        }
+
+        private void button17_Click(object sender, EventArgs e)// clear
         {
             input = "";
             textBox1.Text = input;
         }
 
-        private void button4_Click(object sender, EventArgs e)//+
+        private void button4_Click(object sender, EventArgs e)// +
         {
             numbers.Add(Convert.ToDouble(input));
             Button button = (Button)sender;
@@ -137,7 +140,7 @@ namespace WinFormsApp1
             textBox1.Text = input;
         }
 
-        private void button8_Click(object sender, EventArgs e)//-
+        private void button8_Click(object sender, EventArgs e)// -
         {
             numbers.Add(Convert.ToDouble(input));
             Button button = (Button)sender;
@@ -146,7 +149,7 @@ namespace WinFormsApp1
             textBox1.Text = input;
         }
 
-        private void button12_Click(object sender, EventArgs e)//*
+        private void button12_Click(object sender, EventArgs e)// *
         {
             numbers.Add(Convert.ToDouble(input));
             Button button = (Button)sender;
@@ -164,7 +167,7 @@ namespace WinFormsApp1
             textBox1.Text = input;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)// =
         {
             numbers.Add(Convert.ToDouble(input));
             input = "";
